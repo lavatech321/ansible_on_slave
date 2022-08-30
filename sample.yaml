@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install a git
+      apt:
+        name: git
+        state: present
+    - name: Create a folder
+      file:
+        name: /tmp/newdata
+        state: directory
+...
